@@ -1,0 +1,27 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    image: victorqin01/node-calculator-app:1.1.1
+    ports:
+      - '3043:8000'
+    environment:
+      - PORT=3043
+    container_name: my-app3
+    networks:
+      - my-net
+
+  app1:
+    build: .
+    image: victorqin01/node-calculator-app:1.1.1
+    ports:
+      - '3044:8000'
+    environment:
+      - PORT=3044
+    container_name: my-app4
+    networks:
+      - my-net
+
+networks:
+  my-net:
+    driver: bridge
