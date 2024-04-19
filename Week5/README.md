@@ -5,8 +5,8 @@
 4. A Docker image was built with the command: `docker build -t victorqin01/node-calculator-app:1.1.1 .`
 5. Once the Docker image was successfully created, a container was created and run with command: `docker run --name container-01 -p 8000:8000 victorqin01/node-calculator-app:1.1.1` 
 6. A log message `app running on port 8000` was shown as the output indicating successful execution
-7. After testing, the Docker image was pushed to DockerHub
+7. After testing, the Docker image was pushed to DockerHub and can be pulled with command `docker pull victorqin01/node-calculator-app`
 
 ### New Tasks(Added after Week 6 Workshop): Docker Compose file
-1. `docker network` command was created and used in `docker run` command to config network with `--network=[network-name]` 
-2. new **docker-compose.yml** file was created in current directory to config the docker image so the image can be setup and run with a single command: `docker compose`
+1. docker network was created using command `docker network create` and the network was used in `docker run` command to config network with `--network=[network-name]` 
+2. new **docker-compose.yml** file was created in current directory to config the docker image so the image can be setup and run with a single command: `docker compose up`
