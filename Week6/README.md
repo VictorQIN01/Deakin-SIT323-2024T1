@@ -12,5 +12,5 @@
 ### 6.2C
 
 1. The pods created in **Task 6.1P** can be checked using `kubectl get pods`, and `kubectl get svc` for the services
-2. The application was tested in the browser with the link[https://localhost:8037/addTwoNumber?n1=323&n2=787], with the result being printed on screen`{"statuscocde":200,"data":1110}`.
+2. The application was tested in the browser with the [link](https://localhost:8037/addTwoNumber?n1=323&n2=787) `https://localhost:8037/addTwoNumber?n1=323&n2=787`, with the result being printed on screen`{"statuscocde":200,"data":1110}`.
 3. Port 8037 was used instead of 8000 (as the internal port number specified for the docker image `victorqin01/node-calculator-app:1.1.1`) with port mapping during the creation of Service.
